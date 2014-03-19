@@ -22,8 +22,10 @@ alias sagi='sudo apt-get install'
 #####################
 
 if [ $HOSTNAME = 'SFO1502217150M' ]; then
+    # http and https proxy
 	export http_proxy=http://grc-americas-pitc-sanraz.proxy.corporate.gtm.ge.com:8080
 	export https_proxy=http://grc-americas-pitc-sanraz.proxy.corporate.gtm.ge.com:8080
+    # path
 	export PATH=$HOME/bin:/usr/local/bin:/usr/local/mongodb/bin:$PATH
 fi
 
@@ -44,8 +46,8 @@ plugins=(git)
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-#ZSH_THEME="robbyrussell"
-ZSH_THEME="gianu"
+ZSH_THEME="robbyrussell"
+#ZSH_THEME="gianu"
 
 #####################
 # Toggles
