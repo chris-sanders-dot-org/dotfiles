@@ -23,8 +23,10 @@ alias sagi='sudo apt-get install'
 
 if [ $HOSTNAME = 'SFO1502217150M' ]; then
     # http and https proxy
-	export http_proxy=http://grc-americas-pitc-sanraz.proxy.corporate.gtm.ge.com:8080
-	export https_proxy=http://grc-americas-pitc-sanraz.proxy.corporate.gtm.ge.com:8080
+	#export http_proxy=http://grc-americas-pitc-sanraz.proxy.corporate.gtm.ge.com:8080
+	#export https_proxy=http://grc-americas-pitc-sanraz.proxy.corporate.gtm.ge.com:8080
+    export http_proxy=proxy-src.research.ge.com:8080
+    export https_proxy=proxy-src.research.ge.com:8080
     # path
 	export PATH=$HOME/bin:/usr/local/bin:/usr/local/mongodb/bin:$PATH
 fi
